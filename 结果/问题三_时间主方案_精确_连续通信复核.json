@@ -1,0 +1,46 @@
+{
+  "status": "通过",
+  "source_prefix": "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案",
+  "output_prefix": "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确",
+  "method": "分段线性轨迹下逐DEM像元柱体的(s,u)凸多边形裁切，解析投影遮挡时间集合；LOS/NLOS距离阈值二次根；状态边界瞬时独立分类；实际直连优先",
+  "physical_phases": 223,
+  "analytic_atomic_intervals": 468,
+  "formal_records": 260,
+  "boundary_events": 691,
+  "communication_seconds": {
+    "直连": 19576.52922838286,
+    "中继": 12124.470771617142,
+    "中断": 0.0
+  },
+  "old_relay_seconds_corrected_to_direct": 0.0,
+  "direct_priority_mismatches": 0,
+  "point_midpoint_crosschecks": 468,
+  "failed_coverage_count": 0,
+  "failures": [],
+  "classification_mismatches": [],
+  "minimum_open_interval_link_margin_db": -4.121147867408581e-13,
+  "minimum_boundary_selected_margin_db": -4.121147867408581e-13,
+  "backend": "cpp",
+  "numerical_tolerance": {
+    "terrain_contact_m": 1e-07,
+    "parameter_event_merge": 1e-12,
+    "link_margin_db": 1e-08
+  },
+  "boundary_convention": "通信提交记录为六列正时长区间加必要零时长瞬时记录。正时长采用[start,end)，零时长行在对应t优先；各运输架次最后返回端点沿左侧状态，若实际状态不同亦有零时长覆盖。零行不计累计时长。绘图使用通信保障正时长表。",
+  "boundary_summary": {
+    "submission_boundary_mismatches": 0,
+    "unique_physical_boundary_events": 490,
+    "right_half_open_mode_exceptions": 17,
+    "left_half_open_mode_exceptions": 17,
+    "isolated_mode_events": 0,
+    "supplementary_zero_duration_records": 20,
+    "submission_records": 280,
+    "boundary_dedup_tolerance_seconds": 1e-08
+  },
+  "dem_sha256": "02f3581304f2e52deaff44563d69d1b8f7ccfc9aedbb4886bc71eb50fee48c6d",
+  "source_hashes": {
+    "_运输_架次.csv": "7bcaf147a5f66d291db01508a492d513214c393235bc121d2f5701834a92ef06",
+    "_运输_航段.csv": "3668863966177944165b45360ad39b242b41f7977ab899c9885416631fd33966",
+    "_中继架次.csv": "c2032c9aaab20c7caff0b1b487d355bb8b6821d8fbdc0c6a7a8d8ab15af27b18"
+  }
+}

@@ -1,0 +1,5 @@
+﻿scenario_id,n_groups,component_partition,total_required,shortage_count,resource_inventory_ratio_sum,transport_workload_gini_normalized,relay_workload_gini_normalized,spatial_compactness_kg_min,spatial_compactness_per_total_kg_min,pareto_in_three_diagnostics,recommended_resource_first
+K2_01,2,C1+C2｜C3,33,6,9.083333333333334,0.8115034028647945,1.0,4075.6663273427553,5.376868505729228,True,False
+K2_02,2,C1+C3｜C2,37,10,10.583333333333334,0.6545539421635832,1.0,4065.5991966465135,5.363587330668223,True,True
+K2_03,2,C1｜C2+C3,31,4,9.0,0.8430505392987887,1.0,4128.329792345134,5.4463453724869835,True,False
+K3_01,3,C1｜C2｜C3,37,10,10.583333333333334,0.748802240731186,1.0,3617.7479278875117,4.7727545222790395,True,False

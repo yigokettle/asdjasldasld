@@ -1,0 +1,9 @@
+﻿resource_key,resource_label,inventory,global_peak
+transport_drone_A,A型运输无人机,4,4
+transport_drone_B,B型运输无人机,2,2
+transport_drone_C,C型运输无人机,2,2
+transport_battery_A,A型共享电池,6,6
+transport_battery_B,B型共享电池,4,4
+transport_battery_C,C型共享电池,4,4
+relay_drone_R,中继无人机,2,2
+relay_component_R,中继能源组件,6,3

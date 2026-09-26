@@ -1,0 +1,3 @@
+﻿n_groups,dominant_block,dominant_block_transport_h,total_transport_h,dominant_workload_share,relaxation_gini_lower_bound,best_achievable_exact_gini,best_scenario_id,discrete_partition_gap,bound_assumption
+2,C2,9.353055555555555,11.305833333333334,0.8272769710817917,0.6545539421635833,0.6545539421635832,K2_02,-1.1102230246251565e-16,其他任务块可任意均分；下界可能严格小于实际可达值
+3,C2,9.353055555555555,11.305833333333334,0.8272769710817917,0.7409154566226874,0.748802240731186,K3_01,0.007886784108498524,其他任务块可任意均分；下界可能严格小于实际可达值

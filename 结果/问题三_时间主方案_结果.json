@@ -1,0 +1,22 @@
+{
+  "status": "FEASIBLE_VERIFIED_REVISED",
+  "scope": "archived zero-lateness scheme 001, two unused one-second relay missions removed, fixed 22 transport sorties and all delivery/flight times preserved",
+  "original_candidate": "方案001",
+  "independent_validation": "问题三_时间主方案_V3_独立核验.json",
+  "N_transport": 22,
+  "N_relay": 4,
+  "joint_finish_s": 6936.0,
+  "transport_finish_s": 6899.0,
+  "relay_finish_s": 6936.0,
+  "last_delivery_s": 6227.0,
+  "total_energy_kwh": 66.21552118013334,
+  "transport_energy_kwh": 63.54158526319967,
+  "relay_energy_kwh": 2.673935916933661,
+  "weighted_lateness": 0.0,
+  "min_hard_slack_s": 0.0,
+  "communication_coverage_failures": 0,
+  "removed_relay_tasks": [
+    "J02",
+    "J05"
+  ]
+}

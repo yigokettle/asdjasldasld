@@ -1,0 +1,45 @@
+{
+  "name": "问题二真正时间优先22架次",
+  "metrics": [
+    0.0,
+    1.916388888888889,
+    63.54158526319967,
+    22
+  ],
+  "last_delivery_s": 6227,
+  "minimum_hard_slack_s": 230,
+  "time_is_transport_all_return_s": 6899,
+  "fixed_route_CP_SAT": [
+    {
+      "objective": "return",
+      "status": "OPTIMAL",
+      "value": 6899.0,
+      "bound": 6899.0
+    },
+    {
+      "objective": "last_delivery",
+      "status": "OPTIMAL",
+      "value": 6227.0,
+      "bound": 6227.0
+    },
+    {
+      "objective": "slack",
+      "status": "OPTIMAL",
+      "value": 230.0,
+      "bound": 230.0
+    },
+    {
+      "objective": "weighted_delivery",
+      "status": "OPTIMAL",
+      "value": 2806080.0,
+      "bound": 2806080.0
+    }
+  ],
+  "not_global_optimality": true,
+  "transport_origin_sha256": {
+    "架次": "7bcaf147a5f66d291db01508a492d513214c393235bc121d2f5701834a92ef06",
+    "逐箱": "0632b452d1d28027ecb1c57dd1a0b8e7f22d8501554d0c03070679152c3ec817",
+    "航段": "3668863966177944165b45360ad39b242b41f7977ab899c9885416631fd33966"
+  },
+  "relation_to_Q3": "仅复用其22条运输路线与实体分配；本方案重新排时、不使用中继时窗。问题三的通信及问题四的输入保持原验证时间表。"
+}

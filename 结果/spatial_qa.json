@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "q3_scenario": "22 transport + 4 relay; archive 001 with unused relays removed",
+  "q3_verified_core_sha256": {
+    "flights.csv": "7bcaf147a5f66d291db01508a492d513214c393235bc121d2f5701834a92ef06",
+    "legs.csv": "3668863966177944165b45360ad39b242b41f7977ab899c9885416631fd33966",
+    "deliveries.csv": "0632b452d1d28027ecb1c57dd1a0b8e7f22d8501554d0c03070679152c3ec817",
+    "relays.csv": "c2032c9aaab20c7caff0b1b487d355bb8b6821d8fbdc0c6a7a8d8ab15af27b18",
+    "communication.csv": "2281c5eeb2e7c2c19c48093fa9ce68a3a3f6885a6f289f550c68d3651c31545f"
+  },
+  "dem_sha256": "02f3581304f2e52deaff44563d69d1b8f7ccfc9aedbb4886bc71eb50fee48c6d",
+  "reference_model": "B",
+  "reference_payload_kg": 0.0,
+  "reference_speed_m_s": {
+    "cruise_speed_m_s": 15.0,
+    "climb_speed_m_s": 3.0,
+    "descent_speed_m_s": 2.5
+  },
+  "clearance_m": 50.0,
+  "hypothetical_hex_operating_agl_m": 30.0,
+  "hex_count": 166,
+  "directed_site_pairs": 240,
+  "site_count": 15,
+  "resource_audit_s": 9047.0,
+  "input_flights": 22,
+  "input_relays": 4,
+  "input_boxes": 80,
+  "transport_only_blocks": 10,
+  "strict_relay_blocks": 3,
+  "transport_only_partition_count": {
+    "2": 511,
+    "3": 9330
+  },
+  "strict_partition_count": {
+    "2": 3,
+    "3": 1
+  },
+  "spatial_medoid_is_new_base": false,
+  "delivery_schedule_changed": false,
+  "Pareto_scope": "only four strict partitions; resource ratio is dimensionless, not an equipment price",
+  "outputs": [
+    "spatial_reference_pairwise.csv",
+    "hex_terrain_time_B.csv",
+    "site_terrain_workload_B.csv",
+    "group_spatial_compactness_B.csv",
+    "scenario_spatial_tradeoff_B.csv"
+  ]
+}

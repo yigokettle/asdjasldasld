@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "ortools_version": "9.15.6755",
+  "hypergraph_edges": 26,
+  "contracted_components": 3,
+  "transport_only_components": 11,
+  "event_segments": 59,
+  "shared_task_ids": 26,
+  "NSGA_II_used_on_this_three_block_instance": false,
+  "CP_SAT_is_actual_partition_and_resource_optimizer": true,
+  "enumeration_used_as_independent_validation": true,
+  "no_fixed_task_start_or_end_optimized": true,
+  "objectives": [
+    "eight-type resource shortages then required quantities",
+    "normalized transport work Gini via exact absolute differences",
+    "B-reference mass-weighted within-group medoid impedance"
+  ],
+  "result": [
+    {
+      "n_groups": 2,
+      "scenario_id": "K2_03",
+      "block_assignment": {
+        "C1": "G1",
+        "C2": "G2",
+        "C3": "G2"
+      },
+      "shortage_count": 4,
+      "total_required": 31,
+      "resource_stock_ratio": 9.0,
+      "transport_workload_gini_normalized": 0.8430505392987887,
+      "spatial_compactness_kg_min": 4128.33,
+      "lexicographic_objectives": {
+        "shortage": 4,
+        "configuration": 31,
+        "resource_stock_ratio_x12": 108,
+        "transport_fairness": 34313,
+        "spatial_compactness": 4128330
+      },
+      "all_stages_proved_OPTIMAL": true
+    },
+    {
+      "n_groups": 3,
+      "scenario_id": "K3_01",
+      "block_assignment": {
+        "C1": "G1",
+        "C2": "G2",
+        "C3": "G3"
+      },
+      "shortage_count": 10,
+      "total_required": 37,
+      "resource_stock_ratio": 10.583333333333334,
+      "transport_workload_gini_normalized": 0.748802240731186,
+      "spatial_compactness_kg_min": 3617.748,
+      "lexicographic_objectives": {
+        "shortage": 10,
+        "configuration": 37,
+        "resource_stock_ratio_x12": 127,
+        "transport_fairness": 60954,
+        "spatial_compactness": 3617748
+      },
+      "all_stages_proved_OPTIMAL": true
+    }
+  ],
+  "stages": [
+    {
+      "k": 2,
+      "objective": "shortage",
+      "status": "OPTIMAL",
+      "value": 4,
+      "best_objective_bound": 4.0,
+      "branches": 64,
+      "wall_time_s": 0.010147132000000001
+    },
+    {
+      "k": 2,
+      "objective": "configuration",
+      "status": "OPTIMAL",
+      "value": 31,
+      "best_objective_bound": 31.0,
+      "branches": 0,
+      "wall_time_s": 0.006489221000000001
+    },
+    {
+      "k": 2,
+      "objective": "resource_stock_ratio_x12",
+      "status": "OPTIMAL",
+      "value": 108,
+      "best_objective_bound": 108.0,
+      "branches": 0,
+      "wall_time_s": 0.003946557
+    },
+    {
+      "k": 2,
+      "objective": "transport_fairness",
+      "status": "OPTIMAL",
+      "value": 34313,
+      "best_objective_bound": 34313.0,
+      "branches": 0,
+      "wall_time_s": 0.004598339
+    },
+    {
+      "k": 2,
+      "objective": "spatial_compactness",
+      "status": "OPTIMAL",
+      "value": 4128330,
+      "best_objective_bound": 4128330.0,
+      "branches": 0,
+      "wall_time_s": 0.004520074000000001
+    },
+    {
+      "k": 3,
+      "objective": "shortage",
+      "status": "OPTIMAL",
+      "value": 10,
+      "best_objective_bound": 10.0,
+      "branches": 0,
+      "wall_time_s": 0.003033659
+    },
+    {
+      "k": 3,
+      "objective": "configuration",
+      "status": "OPTIMAL",
+      "value": 37,
+      "best_objective_bound": 37.0,
+      "branches": 0,
+      "wall_time_s": 0.0025654280000000002
+    },
+    {
+      "k": 3,
+      "objective": "resource_stock_ratio_x12",
+      "status": "OPTIMAL",
+      "value": 127,
+      "best_objective_bound": 127.0,
+      "branches": 0,
+      "wall_time_s": 0.0021814810000000003
+    },
+    {
+      "k": 3,
+      "objective": "transport_fairness",
+      "status": "OPTIMAL",
+      "value": 60954,
+      "best_objective_bound": 60954.0,
+      "branches": 0,
+      "wall_time_s": 0.0021401090000000003
+    },
+    {
+      "k": 3,
+      "objective": "spatial_compactness",
+      "status": "OPTIMAL",
+      "value": 3617748,
+      "best_objective_bound": 3617748.0,
+      "branches": 0,
+      "wall_time_s": 0.0021334400000000003
+    }
+  ],
+  "fairness_lower_bound": [
+    {
+      "n_groups": 2,
+      "dominant_block": "C2",
+      "dominant_block_transport_h": 9.353055555555555,
+      "total_transport_h": 11.305833333333334,
+      "dominant_workload_share": 0.8272769710817917,
+      "relaxation_gini_lower_bound": 0.6545539421635833,
+      "best_achievable_exact_gini": 0.6545539421635832,
+      "best_scenario_id": "K2_02",
+      "discrete_partition_gap": -1.1102230246251565e-16,
+      "bound_assumption": "其他任务块可任意均分；下界可能严格小于实际可达值"
+    },
+    {
+      "n_groups": 3,
+      "dominant_block": "C2",
+      "dominant_block_transport_h": 9.353055555555555,
+      "total_transport_h": 11.305833333333334,
+      "dominant_workload_share": 0.8272769710817917,
+      "relaxation_gini_lower_bound": 0.7409154566226874,
+      "best_achievable_exact_gini": 0.748802240731186,
+      "best_scenario_id": "K3_01",
+      "discrete_partition_gap": 0.007886784108498524,
+      "bound_assumption": "其他任务块可任意均分；下界可能严格小于实际可达值"
+    }
+  ],
+  "source_hashes": {
+    "intervals": "8db5b01dec70aa8fdec1ef14035266a0c414e695a7ef744ff58c2ac1fb2b1e1f",
+    "components": "a82df924bbc14e6a6d9e85d9cd06598825a8307b6fb13d65a7cbf44404a55808",
+    "spatial_reference_pairwise": "dbfc6d5ae85ac7d5785c7a718c66dd74b7d2cbc3958cfb7d609c392c7a581763",
+    "scenarios": "30e72e539309327f19bcee32daf1a28a17e489a8bd9938412ff88cd083253c7b"
+  }
+}

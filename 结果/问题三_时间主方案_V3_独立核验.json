@@ -1,0 +1,166 @@
+{
+  "status": "全部通过",
+  "source_prefix": "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案",
+  "运输架次": 22,
+  "中继架次": 4,
+  "两类架次分别报告": {
+    "运输": 22,
+    "中继": 4
+  },
+  "合计架次": 26,
+  "交付货箱": 80,
+  "原始硬时限货箱": 31,
+  "普通软时限货箱": 49,
+  "硬时限全部满足": true,
+  "软时限迟到箱数": 0,
+  "软时限延误总秒": 0.0,
+  "归一化加权延误": 0.0,
+  "最小硬余量秒": 0.0,
+  "运输完成秒": 6899.0,
+  "中继完成秒": 6936.0,
+  "联合完成秒": 6936.0,
+  "最后货箱交付秒": 6227.0,
+  "运输能耗kWh": 63.54158526319967,
+  "中继能耗kWh": 2.673935916933661,
+  "总能耗kWh": 66.21552118013334,
+  "运输最小返航SOC百分比": 20.237385821866926,
+  "中继最小返航SOC百分比": 60.68509680337788,
+  "逐航段能耗最大误差kWh": 2.220446049250313e-16,
+  "质量kg": 758.0,
+  "体积m3": 2.011,
+  "资源峰值": [
+    {
+      "资源": "运输无人机",
+      "机型": "A",
+      "峰值": 4,
+      "库存": 4,
+      "通过": true
+    },
+    {
+      "资源": "运输共享电池",
+      "机型": "A",
+      "峰值": 6,
+      "库存": 6,
+      "通过": true
+    },
+    {
+      "资源": "运输无人机",
+      "机型": "B",
+      "峰值": 2,
+      "库存": 2,
+      "通过": true
+    },
+    {
+      "资源": "运输共享电池",
+      "机型": "B",
+      "峰值": 4,
+      "库存": 4,
+      "通过": true
+    },
+    {
+      "资源": "运输无人机",
+      "机型": "C",
+      "峰值": 2,
+      "库存": 2,
+      "通过": true
+    },
+    {
+      "资源": "运输共享电池",
+      "机型": "C",
+      "峰值": 4,
+      "库存": 4,
+      "通过": true
+    },
+    {
+      "资源": "中继无人机",
+      "机型": "R",
+      "峰值": 2,
+      "库存": 2,
+      "通过": true
+    },
+    {
+      "资源": "中继能源组件",
+      "机型": "R",
+      "峰值": 3,
+      "库存": 6,
+      "通过": true
+    }
+  ],
+  "双向链路门限dB": {
+    "direct": 122.0,
+    "access": 116.0,
+    "backhaul": 126.0
+  },
+  "原始时限口径": "医疗期望及首批截止为硬约束；49个普通货箱期望仅计软延误，未将期望硬化。",
+  "source_sha256": {
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_运输_架次.csv": "7bcaf147a5f66d291db01508a492d513214c393235bc121d2f5701834a92ef06",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_运输_逐箱.csv": "0632b452d1d28027ecb1c57dd1a0b8e7f22d8501554d0c03070679152c3ec817",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_运输_航段.csv": "3668863966177944165b45360ad39b242b41f7977ab899c9885416631fd33966",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_中继架次.csv": "c2032c9aaab20c7caff0b1b487d355bb8b6821d8fbdc0c6a7a8d8ab15af27b18",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_结果.json": "99665473d116a3d0fcf3cc52594168f0fbf92b6617372f750ac208a3a98c83de",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/中继无人机数据.xlsx": "be52643ff29419233e6a141dca03a04160a8af551cab36d8c49b51bb836bea04",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/通信链路参数.xlsx": "1860d153199e7ae460ba36e83b673374e640e19de91ea167f2877271001f5f81",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/q1_flat/最终工作DEM.tif": "02f3581304f2e52deaff44563d69d1b8f7ccfc9aedbb4886bc71eb50fee48c6d",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/q1_flat/调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/q1_flat/物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/q1_flat/运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb"
+  },
+  "精确通信核验": {
+    "status": "通过",
+    "source_prefix": "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案",
+    "output_prefix": "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确",
+    "method": "分段线性轨迹下逐DEM像元柱体的(s,u)凸多边形裁切，解析投影遮挡时间集合；LOS/NLOS距离阈值二次根；状态边界瞬时独立分类；实际直连优先",
+    "physical_phases": 223,
+    "analytic_atomic_intervals": 468,
+    "formal_records": 260,
+    "boundary_events": 691,
+    "communication_seconds": {
+      "直连": 19576.52922838286,
+      "中继": 12124.470771617142,
+      "中断": 0.0
+    },
+    "old_relay_seconds_corrected_to_direct": 0.0,
+    "direct_priority_mismatches": 0,
+    "point_midpoint_crosschecks": 468,
+    "failed_coverage_count": 0,
+    "failures": [],
+    "classification_mismatches": [],
+    "minimum_open_interval_link_margin_db": -4.121147867408581e-13,
+    "minimum_boundary_selected_margin_db": -4.121147867408581e-13,
+    "backend": "cpp",
+    "numerical_tolerance": {
+      "terrain_contact_m": 1e-07,
+      "parameter_event_merge": 1e-12,
+      "link_margin_db": 1e-08
+    },
+    "boundary_convention": "通信提交记录为六列正时长区间加必要零时长瞬时记录。正时长采用[start,end)，零时长行在对应t优先；各运输架次最后返回端点沿左侧状态，若实际状态不同亦有零时长覆盖。零行不计累计时长。绘图使用通信保障正时长表。",
+    "boundary_summary": {
+      "submission_boundary_mismatches": 0,
+      "unique_physical_boundary_events": 490,
+      "right_half_open_mode_exceptions": 17,
+      "left_half_open_mode_exceptions": 17,
+      "isolated_mode_events": 0,
+      "supplementary_zero_duration_records": 20,
+      "submission_records": 280,
+      "boundary_dedup_tolerance_seconds": 1e-08
+    },
+    "dem_sha256": "02f3581304f2e52deaff44563d69d1b8f7ccfc9aedbb4886bc71eb50fee48c6d",
+    "source_hashes": {
+      "_运输_架次.csv": "7bcaf147a5f66d291db01508a492d513214c393235bc121d2f5701834a92ef06",
+      "_运输_航段.csv": "3668863966177944165b45360ad39b242b41f7977ab899c9885416631fd33966",
+      "_中继架次.csv": "c2032c9aaab20c7caff0b1b487d355bb8b6821d8fbdc0c6a7a8d8ab15af27b18"
+    }
+  },
+  "精确通信文件SHA256": {
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确_连续通信复核.json": "eb55bc455d4909cc23ce55be01f931a77bb7680ece6b48c2fea44763774f0275",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确_通信保障.csv": "eb526457bef5c8e7bed49bd281df3e13610a37626a3f5eb18fe57230e8fcdfd3",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确_通信提交记录.csv": "2281c5eeb2e7c2c19c48093fa9ce68a3a3f6885a6f289f550c68d3651c31545f",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确_通信物理阶段.csv": "ad9cc93d462e2915a8fcc34b4b3f91ae21646b499a89b5c4ec2f98bc49217862",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确_通信瞬时补充记录.csv": "3d4498787d12eb5afff45ba5968b58fefe3e51485bb769db50e60d21b058dc5f",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确_通信解析区间.csv": "d50b4685252f07f00bf27cde3c3dd4f1f20399c00fe23e9afe92967de537cf1b",
+    "/workspace/scratch/3599305db02c/work/Time_Priority_Q2_Q3_Q4/q3_source/问题三_时间主方案_精确_通信边界事件.csv": "1434e303182c495b536d14ce0c1865643f185e196779d2a91d730d8370450d91"
+  },
+  "旧通信记录保持不变": true,
+  "seconds": 1.2482839889999013,
+  "scope": "原始表、工作DEM及题定物理规则独立复算；不提供全局最优证明。精确通信另存_精确_*，不以旧保守标签代替实际状态。"
+}

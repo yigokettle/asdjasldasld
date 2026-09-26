@@ -1,0 +1,196 @@
+{
+  "assumption": "各组独立复制所需的完整中继服务模板；中继位置、起止时刻、运输访问、逐箱送达均保持原样；复制中继任务导致能耗和资源需求增加。",
+  "base_q3": {
+    "transport_sorties": 22,
+    "relay_sorties": 4,
+    "transport_plus_relay_energy_kwh": 66.21552118013331,
+    "last_delivery_s": 6227.0,
+    "last_joint_return_s": 6936.0
+  },
+  "strict_model": {
+    "block_sizes": [
+      1,
+      13,
+      1
+    ],
+    "strict_two_group_without_single_site": "K2_02：S001与S006同组，其余13区同组；分别21、59箱，库存缺10件。",
+    "three_groups_minimum_two_sites": "INFEASIBLE",
+    "reason": "13区任务块不能拆，余下两个块各仅1区；三组必有两个单区。"
+  },
+  "extended": [
+    {
+      "masks": [
+        27,
+        996
+      ],
+      "shortage": 5,
+      "required": {
+        "transport_drone_A": 5,
+        "transport_drone_B": 2,
+        "transport_drone_C": 3,
+        "transport_battery_A": 6,
+        "transport_battery_B": 4,
+        "transport_battery_C": 5,
+        "relay_drone_R": 4,
+        "relay_component_R": 6
+      },
+      "fairness": 0.05304537972039999,
+      "spatial": 391.05830148540457,
+      "group_sites": [
+        8,
+        7
+      ],
+      "work": [
+        19271,
+        21430
+      ],
+      "relay_sorties": 7,
+      "k": 2,
+      "solver_status": "OPTIMAL",
+      "min_sites": 6,
+      "max_sites": 9,
+      "fairness_cap": 0.33,
+      "candidates_checked": 248,
+      "status": "增配中继副本的条件方案",
+      "scenario_id": "R2_不设单站组",
+      "relay_copy_count": 3,
+      "relay_sorties_total": 7,
+      "energy_kwh": 68.71027190503355,
+      "groups": [
+        {
+          "scenario_id": "R2_不设单站组",
+          "n_groups": 2,
+          "group_id": "G1",
+          "sites": "S001、S002、S004、S005、S009、S010、S011、S013",
+          "n_sites": 8,
+          "n_boxes": 47,
+          "transport_sorties": 10,
+          "relay_sorties": 3,
+          "transport_workload_h": 5.353055555555556,
+          "relay_workload_h": 2.7911111111111113,
+          "transport_energy_kwh": 34.21723661512632,
+          "relay_energy_kwh": 2.494750724900252,
+          "spatial_medoid": "S001",
+          "spatial_box_min": 180.10288404756434
+        },
+        {
+          "scenario_id": "R2_不设单站组",
+          "n_groups": 2,
+          "group_id": "G2",
+          "sites": "S003、S006、S007、S008、S012、S014、S015",
+          "n_sites": 7,
+          "n_boxes": 33,
+          "transport_sorties": 12,
+          "relay_sorties": 4,
+          "transport_workload_h": 5.9527777777777775,
+          "relay_workload_h": 3.098333333333333,
+          "transport_energy_kwh": 29.324348648073343,
+          "relay_energy_kwh": 2.673935916933632,
+          "spatial_medoid": "S007",
+          "spatial_box_min": 210.95541743784023
+        }
+      ]
+    },
+    {
+      "masks": [
+        37,
+        18,
+        968
+      ],
+      "shortage": 9,
+      "required": {
+        "transport_drone_A": 5,
+        "transport_drone_B": 3,
+        "transport_drone_C": 4,
+        "transport_battery_A": 6,
+        "transport_battery_B": 4,
+        "transport_battery_C": 5,
+        "relay_drone_R": 5,
+        "relay_component_R": 7
+      },
+      "fairness": 0.08191444927643055,
+      "spatial": 404.54898882056824,
+      "group_sites": [
+        4,
+        6,
+        5
+      ],
+      "work": [
+        15132,
+        13771,
+        11798
+      ],
+      "relay_sorties": 8,
+      "k": 3,
+      "solver_status": "OPTIMAL",
+      "min_sites": 4,
+      "max_sites": 6,
+      "fairness_cap": 0.34,
+      "candidates_checked": 1260,
+      "status": "增配中继副本的条件方案",
+      "scenario_id": "R3_不设单站组",
+      "relay_copy_count": 4,
+      "relay_sorties_total": 8,
+      "energy_kwh": 69.9683488073255,
+      "groups": [
+        {
+          "scenario_id": "R3_不设单站组",
+          "n_groups": 3,
+          "group_id": "G1",
+          "sites": "S001、S003、S006、S007",
+          "n_sites": 4,
+          "n_boxes": 34,
+          "transport_sorties": 9,
+          "relay_sorties": 1,
+          "transport_workload_h": 4.203333333333333,
+          "relay_workload_h": 1.3311111111111111,
+          "transport_energy_kwh": 22.30128061319832,
+          "relay_energy_kwh": 1.258076902291944,
+          "spatial_medoid": "S001",
+          "spatial_box_min": 181.0409535540175
+        },
+        {
+          "scenario_id": "R3_不设单站组",
+          "n_groups": 3,
+          "group_id": "G2",
+          "sites": "S002、S005、S009、S010、S011、S013",
+          "n_sites": 6,
+          "n_boxes": 26,
+          "transport_sorties": 7,
+          "relay_sorties": 3,
+          "transport_workload_h": 3.825277777777778,
+          "relay_workload_h": 2.7911111111111113,
+          "transport_energy_kwh": 22.146750926290785,
+          "relay_energy_kwh": 2.494750724900252,
+          "spatial_medoid": "S009",
+          "spatial_box_min": 107.61126935464122
+        },
+        {
+          "scenario_id": "R3_不设单站组",
+          "n_groups": 3,
+          "group_id": "G3",
+          "sites": "S004、S008、S012、S014、S015",
+          "n_sites": 5,
+          "n_boxes": 20,
+          "transport_sorties": 6,
+          "relay_sorties": 4,
+          "transport_workload_h": 3.277222222222222,
+          "relay_workload_h": 3.098333333333333,
+          "transport_energy_kwh": 19.09355372371056,
+          "relay_energy_kwh": 2.673935916933632,
+          "spatial_medoid": "S004",
+          "spatial_box_min": 115.89676591190953
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "cp_sat_optimal": true,
+    "independent_enumeration_crosscheck": true,
+    "original_transport_tasks_unchanged": true,
+    "all_original_communication_links_within_copied_group": true,
+    "no_single_site_group": true,
+    "relay_copies_explicit": true,
+    "missing_inventory_not_hard_constrained": true
+  }
+}

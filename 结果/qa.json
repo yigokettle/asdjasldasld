@@ -1,0 +1,204 @@
+{
+  "status": "PASS",
+  "computed_utc": "2026-09-24T04:19:55.601944+00:00",
+  "elapsed_s": 0.18550448899623007,
+  "inventory": {
+    "transport_drone_A": 4,
+    "transport_drone_B": 2,
+    "transport_drone_C": 2,
+    "transport_battery_A": 6,
+    "transport_battery_B": 4,
+    "transport_battery_C": 4,
+    "relay_drone_R": 2,
+    "relay_component_R": 6
+  },
+  "global_peaks": {
+    "transport_drone_A": 4,
+    "transport_drone_B": 2,
+    "transport_drone_C": 2,
+    "transport_battery_A": 6,
+    "transport_battery_B": 4,
+    "transport_battery_C": 4,
+    "relay_drone_R": 2,
+    "relay_component_R": 3
+  },
+  "recommendations": {
+    "2": "K2_02",
+    "3": null
+  },
+  "audit_s": 9047.0,
+  "source_files": [
+    {
+      "local_file": "sources/flights.csv",
+      "original_file": "问题三_时间主方案_运输_架次.csv",
+      "sha256": "7bcaf147a5f66d291db01508a492d513214c393235bc121d2f5701834a92ef06",
+      "bytes": 3278
+    },
+    {
+      "local_file": "sources/deliveries.csv",
+      "original_file": "问题三_时间主方案_运输_逐箱.csv",
+      "sha256": "0632b452d1d28027ecb1c57dd1a0b8e7f22d8501554d0c03070679152c3ec817",
+      "bytes": 3423
+    },
+    {
+      "local_file": "sources/legs.csv",
+      "original_file": "问题三_时间主方案_运输_航段.csv",
+      "sha256": "3668863966177944165b45360ad39b242b41f7977ab899c9885416631fd33966",
+      "bytes": 5642
+    },
+    {
+      "local_file": "sources/relays.csv",
+      "original_file": "问题三_时间主方案_中继架次.csv",
+      "sha256": "c2032c9aaab20c7caff0b1b487d355bb8b6821d8fbdc0c6a7a8d8ab15af27b18",
+      "bytes": 813
+    },
+    {
+      "local_file": "sources/communication.csv",
+      "original_file": "问题三_时间主方案_精确_通信提交记录.csv",
+      "sha256": "2281c5eeb2e7c2c19c48093fa9ce68a3a3f6885a6f289f550c68d3651c31545f",
+      "bytes": 14551
+    },
+    {
+      "local_file": "sources/transport.xlsx",
+      "original_file": "q1_flat/运输无人机数据.xlsx",
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+      "bytes": 11746
+    },
+    {
+      "local_file": "sources/relay.xlsx",
+      "original_file": "中继无人机数据.xlsx",
+      "sha256": "be52643ff29419233e6a141dca03a04160a8af551cab36d8c49b51bb836bea04",
+      "bytes": 11082
+    },
+    {
+      "local_file": "sources/nodes.xlsx",
+      "original_file": "q1_flat/调度中心与服务区.xlsx",
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+      "bytes": 11017
+    },
+    {
+      "local_file": "sources/boxes.xlsx",
+      "original_file": "q1_flat/物资需求与配送时限.xlsx",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+      "bytes": 17474
+    },
+    {
+      "local_file": "sources/q3_validation.json",
+      "original_file": "问题三_时间主方案_V3_独立核验.json",
+      "sha256": "f6eea369aa193e063b5d0231077242b5eb51171f4c209d4205c8761521d3641a",
+      "bytes": 8347
+    }
+  ],
+  "proof": {
+    "fixed_q3_tasks": {
+      "transport_sorties": 22,
+      "relay_sorties": 4,
+      "boxes": 80,
+      "service_areas": 15
+    },
+    "transport_only_components": [
+      [
+        "S001"
+      ],
+      [
+        "S002",
+        "S009",
+        "S010",
+        "S013"
+      ],
+      [
+        "S003",
+        "S007"
+      ],
+      [
+        "S004"
+      ],
+      [
+        "S005",
+        "S011"
+      ],
+      [
+        "S006"
+      ],
+      [
+        "S008"
+      ],
+      [
+        "S012"
+      ],
+      [
+        "S014"
+      ],
+      [
+        "S015"
+      ]
+    ],
+    "n_transport_components": 10,
+    "must_link_components": [
+      [
+        "S001"
+      ],
+      [
+        "S002",
+        "S003",
+        "S004",
+        "S005",
+        "S007",
+        "S008",
+        "S009",
+        "S010",
+        "S011",
+        "S012",
+        "S013",
+        "S014",
+        "S015"
+      ],
+      [
+        "S006"
+      ]
+    ],
+    "n_components": 3,
+    "partition_counts": {
+      "2": 3,
+      "3": 1
+    },
+    "enumeration": "将运输和中继超边作并查集收缩；对三个联合任务块规范增长串穷举全部无标签二分和三分，供独立核验CP-SAT结果。",
+    "resource_minimality": "固定半开区间的冲突图为区间图；最大重叠数是资源数量下界；贪心区间着色恰好达到该下界。",
+    "inventory_infeasibility": "按四个方案逐类型核算库存；是否可在现有库存内独立执行以实际输出 shortage_count 判断。",
+    "scope": "仅证明当前固定问题三任务与通信保障关系下的分组及最小增配，不证明原问题三联合优化的全局最优。"
+  },
+  "definitions": {
+    "input_boundary": "完整继承问题三22个运输架次、4个中继架次、逐箱时间及全部280条通信提交记录；中继任务不复制、不切割、不重排。",
+    "recommendation_rule": "先要求各组至少2个服务区；在满足该条件的严格方案内最小化分类库存缺口总件数，再比较专属配置和运输机占用工时Gini。三组无可推荐方案。",
+    "transport_workload_gini": "各组运输机开始至返航占用工时的组间Gini，作为主要工作负担公平指标；另报中继机同口径占用工时。",
+    "group_workload_gini": "运输机、电池、中继机、能源组件四种设备占用工时合计的补充性组间Gini；主要公平指标使用运输机占用工时Gini，不等于人口公平或逐箱送达时间变化。",
+    "group_workload_gini_normalized": "原始Gini/(1-1/k)，使k组情景的理论上限均为1；比较不同组数时同时报告，分组推荐仍分别在固定k内进行。",
+    "total_workload_h": "运输无人机(开始→返回)+运输电池(开始→充满)+中继无人机(开始→返回后300秒)+中继组件(开始→充满)占用秒数之和/3600；是设备时，不是自然历时或人工作业时间。",
+    "aircraft_workload_h": "只累计运输机和中继机占用工时，不累计电池/组件。",
+    "partition_overhead": "各组最小专属资源数之和−不分组的全局峰值；表示分组导致共享机会损失，非闲置时间。",
+    "unused_inventory": "max(库存−总专属配置,0)，不同资源类型不可互相抵扣。",
+    "shortage": "max(总专属配置−库存,0)，逐资源类型求和，未假定购买成本相同，仅报告件数。",
+    "intervals": "全部资源占用用半开区间[start,end)，同一秒结束可立即分配给下一架次；ID由逐组区间着色重新生成，不沿用旧编号计数。",
+    "utilization": "逐组逐类占用秒数/(该组该类最少专属设备数×统一核算时长)；统一时长覆盖全部设备返航、充电和中继周转；该组无该类任务时留空。",
+    "inventory_status": "以逐类计算所得库存缺口为准；有缺口的方案仅在补足对应资源后可实施。"
+  },
+  "invariant_totals": {
+    "mass_kg": 758.0,
+    "volume_m3": 2.0109999999999997,
+    "transport_energy_kwh": 63.54158526319967,
+    "relay_energy_kwh": 2.673935916933632,
+    "total_energy_kwh": 66.21552118013331,
+    "transport_occupancy_h": 11.305833333333334,
+    "total_device_occupancy_h": 38.84027777777778
+  },
+  "checks": {
+    "all_partitions_enumerated": true,
+    "resource_coloring_reaches_peak": true,
+    "all_tasks_preserved": true,
+    "all_communication_assignments_preserved": true,
+    "all_boxes_preserved": true,
+    "no_rescheduling": true,
+    "no_relay_task_duplication": true,
+    "feasible_partitions_existing_inventory": 0
+  }
+}
